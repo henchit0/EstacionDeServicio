@@ -1,0 +1,11 @@
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\bin\Debug\EstacionDeServicio.exe.config
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\bin\Debug\EstacionDeServicio.exe
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\bin\Debug\EstacionDeServicio.pdb
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.csprojAssemblyReference.cache
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.Properties.Resources.resources
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.csproj.GenerateResource.cache
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.csproj.CoreCompileInputs.cache
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.exe
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.pdb
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.FrmMenu.resources
+C:\Users\daisa\Desktop\EstacioDeServicio\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.FrontEnd.FrmSurtidor.resources
