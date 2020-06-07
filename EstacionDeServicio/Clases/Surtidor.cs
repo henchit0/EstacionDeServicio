@@ -29,8 +29,7 @@ namespace EstacionDeServicio.Clases
 
         public void SurtirCombustible(int litros)
         {
-            this.tipoTanque.ExtraerCombustible(litros);
-            //this.litrosSurtidos += litros;
+            this.tipoTanque.disponibleTanque -= litros;            
         }
 
         public void CalcularMonto(int litros)

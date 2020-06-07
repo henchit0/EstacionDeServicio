@@ -28,6 +28,7 @@ namespace EstacionDeServicio.Clases
             this.tanqueDiesel = tanqueDiesel;
             this.tanqueSuper = tanqueSuper;
             this.tanquePremium = tanquePremium;
+        }
 
         //Metodos de clase
         /*public void IniciarJornada()
@@ -35,9 +36,9 @@ namespace EstacionDeServicio.Clases
 
         }
 
-        public void FinalizarJornada()
+        public void FinalizarJornada(){
         {*/
 
-        }
+
     }
 }
