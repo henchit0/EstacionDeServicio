@@ -8,6 +8,13 @@ namespace EstacionDeServicio.Clases.Interfaces
 {
     public interface ITanque
     {
+        int idTanque { get; set; }
+        string tipoCombustible { get; set; }
+        int capacidadTanque { get; set; }
+        int disponibleTanque { get; set; }
+        int precioPorLitro { get; set; }
+        int montoTotal { get; set; }
+
         void CargarTanque();
     }
 }

@@ -46,9 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Establesimiento.cs" />
+    <Compile Include="Clases\Abstractas\Establecimiento.cs" />
+    <Compile Include="Clases\EstacionFsociety.cs" />
+    <Compile Include="Clases\Interfaces\IOperaciones.cs" />
+    <Compile Include="Clases\Interfaces\ISurtidor.cs" />
+    <Compile Include="Clases\Interfaces\ITanque.cs" />
     <Compile Include="Clases\Operaciones.cs" />
-    <Compile Include="Clases\Persona.cs" />
+    <Compile Include="Clases\Abstractas\Persona.cs" />
+    <Compile Include="Clases\Playero.cs" />
     <Compile Include="Clases\Surtidor.cs" />
     <Compile Include="Clases\Tanque.cs" />
     <Compile Include="FrontEnd\FrmMenu.cs">

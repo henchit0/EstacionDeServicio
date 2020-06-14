@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EstacionDeServicio.Clases;
+using EstacionDeServicio.Clases.Interfaces;
 using EstacionDeServicio.FrontEnd;
 
 namespace EstacionDeServicio
@@ -18,31 +19,55 @@ namespace EstacionDeServicio
         private Surtidor surtidorDiesel;
         private Surtidor surtidorSuper;
         private Surtidor surtidorPremium;
+        private Playero playeroDiesel;
+        private Playero playeroSuper;
+        private Playero playeroPremium;
 
         public FrmMenu(Operaciones operaciones)
         {
             InitializeComponent();
             this._objOperaciones = operaciones;
+            playeroDiesel = IniciarPlayeroDiesel();
+            playeroSuper = IniciarPlayeroSuper();
+            playeroPremium = IniciarPlayeroPremium();
             surtidorDiesel = IniciarSurtidorDiesel();
             surtidorSuper = IniciarSurtidorSuper();
-            surtidorPremium = IniciarSurtidorPremium();
-            CalcularLitros();
+            surtidorPremium = IniciarSurtidorPremium();            
+            CalcularTotales();
             LlenarDatos();
-        }   
+        }
+
+        private Playero IniciarPlayeroPremium()
+        {
+            Playero playeroPremium = new Playero("Tamara");
+            return playeroPremium;
+        }
+
+        private Playero IniciarPlayeroSuper()
+        {
+            Playero playeroSuper = new Playero("Marcelo");
+            return playeroSuper;
+        }
+
+        private Playero IniciarPlayeroDiesel()
+        {
+            Playero playeroDiesel = new Playero("Dionel");
+            return playeroDiesel;
+        }
 
         private Surtidor IniciarSurtidorDiesel()
         {
-            Surtidor surtidorDiesel = new Surtidor(1, _objOperaciones.tanqueDiesel, 0, 0, 0);
+            Surtidor surtidorDiesel = new Surtidor(1, playeroDiesel, _objOperaciones.tanqueDiesel, 0, 0, 0);
             return surtidorDiesel;
         }
         private Surtidor IniciarSurtidorSuper()
         {
-            Surtidor surtidorSuper = new Surtidor(2, _objOperaciones.tanqueSuper, 0, 0, 0);
+            Surtidor surtidorSuper = new Surtidor(2, playeroSuper, _objOperaciones.tanqueSuper, 0, 0, 0);
             return surtidorSuper;
         }
         private Surtidor IniciarSurtidorPremium()
         {
-            Surtidor surtidorPremium = new Surtidor(3, _objOperaciones.tanquePremium, 0, 0, 0);
+            Surtidor surtidorPremium = new Surtidor(3, playeroPremium, _objOperaciones.tanquePremium, 0, 0, 0);
             return surtidorPremium;
         }
 
@@ -56,31 +81,35 @@ namespace EstacionDeServicio
 
             //Llenamos los datos de los tanques
             //Diesel
-            lblPlayeroDiesel.Text = "Player@: Roberto";
+            lblPlayeroDiesel.Text = $"Player@: {surtidorDiesel.playero.Nombre}";
             lblCapacidadDiesel.Text = $"Capacidad: {_objOperaciones.tanqueDiesel.capacidadTanque.ToString()}";
             lblDisponibleDiesel.Text = $"Disponible: {_objOperaciones.tanqueDiesel.disponibleTanque.ToString()}";
             lblTotalLitrosDiesel.Text = $"Total surtido: {surtidorDiesel.litrosSurtidos}lts.";
             lblCantOperacionesDiesel.Text = $"Cant. operaciones: {surtidorDiesel.cantOperaciones}";
             lblMontoTotalDiesel.Text = $"Monto Total: ${surtidorDiesel.montoSurtido}";
             //Super
-            lblPlayeroSuper.Text = "Player@: Manolo";
-            lblCapacidadSuper.Text = $"Capacidad: {_objOperaciones.tanqueSuper.capacidadTanque.ToString()}";
-            lblDisponibleSuper.Text = $"Disponible: {_objOperaciones.tanqueSuper.disponibleTanque.ToString()}";
+            lblPlayeroSuper.Text = $"Player@: {surtidorSuper.playero.Nombre}";
+            lblCapacidadSuper.Text = $"Capacidad: {_objOperaciones.tanqueSuper.capacidadTanque}";
+            lblDisponibleSuper.Text = $"Disponible: {_objOperaciones.tanqueSuper.disponibleTanque}";
             lblTotalLitrosSuper.Text = $"Total surtido: {surtidorSuper.litrosSurtidos}lts.";
             lblCantOperacionesSuper.Text = $"Cant. operaciones: {surtidorSuper.cantOperaciones}";
             lblMontoTotalSuper.Text = $"Monto Total: ${surtidorSuper.montoSurtido}";
-            //Super
-            lblPlayeroPremium.Text = "Player@: Marian";
-            lblCapacidadPremium.Text = $"Capacidad: {_objOperaciones.tanquePremium.capacidadTanque.ToString()}";
-            lblDisponiblePremium.Text = $"Disponible: {_objOperaciones.tanquePremium.disponibleTanque.ToString()}";
+            //Premium
+            lblPlayeroPremium.Text = $"Player@: {surtidorPremium.playero.Nombre}";
+            lblCapacidadPremium.Text = $"Capacidad: {_objOperaciones.tanquePremium.capacidadTanque}";
+            lblDisponiblePremium.Text = $"Disponible: {_objOperaciones.tanquePremium.disponibleTanque}";
             lblTotalLitrosPremium.Text = $"Total surtido: {surtidorPremium.litrosSurtidos}lts.";
             lblCantOperacionesPremium.Text = $"Cant. Operaciones: {surtidorPremium.cantOperaciones}";
             lblMontoTotalPremium.Text = $"Monto Total: ${surtidorPremium.montoSurtido}";
+            //Operaciones
+            label1.Text = $"Total facturado: ${_objOperaciones.totalFacturado}";
+            label2.Text = $"Total lts. Surtidos: ${_objOperaciones.totalLitros}";
         }
 
-        private void CalcularLitros()
+        private void CalcularTotales()
         {
-            _objOperaciones.totalLitros = surtidorDiesel.litrosSurtidos + surtidorSuper.litrosSurtidos + surtidorPremium.litrosSurtidos;
+            _objOperaciones.CalcularTotalLitros(surtidorDiesel.litrosSurtidos, surtidorSuper.litrosSurtidos, surtidorPremium.litrosSurtidos);
+            _objOperaciones.CalcularTotalFacturado(surtidorDiesel.montoSurtido, surtidorSuper.montoSurtido, surtidorPremium.montoSurtido);
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -112,7 +141,7 @@ namespace EstacionDeServicio
         {                        
             FrmSurtidor frmDiesel = new FrmSurtidor(surtidorDiesel);
             frmDiesel.ShowDialog();
-            CalcularLitros();
+            CalcularTotales();
             LlenarDatos();
         }
 
@@ -120,7 +149,7 @@ namespace EstacionDeServicio
         {
             FrmSurtidor frmSuper = new FrmSurtidor(surtidorSuper);
             frmSuper.ShowDialog();
-            CalcularLitros();
+            CalcularTotales();
             LlenarDatos();
         }
 
@@ -128,7 +157,7 @@ namespace EstacionDeServicio
         {
             FrmSurtidor frmPremium = new FrmSurtidor(surtidorPremium);
             frmPremium.ShowDialog();
-            CalcularLitros();
+            CalcularTotales();
             LlenarDatos();
         }
     }

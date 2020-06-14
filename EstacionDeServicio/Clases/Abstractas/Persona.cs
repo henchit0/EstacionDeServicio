@@ -8,10 +8,12 @@ namespace EstacionDeServicio.Clases
 {
     public abstract class Persona
     {
-        protected int NroLegajo { get; set; }
-        protected String Nombre { get; set; }
-        protected String Apellido { get; set; }
-        protected String NroDocumento { get; set; }
-        protected String Email { get; set; }        
+        public abstract int IdPersona { get; set; }
+        public abstract int NroLegajo { get; set; }
+        public abstract String Nombre { get; set; }
+        public abstract String Apellido { get; set; }
+        public abstract String NroDocumento { get; set; }
+        public abstract String Email { get; set; }
+        
     }
 }
