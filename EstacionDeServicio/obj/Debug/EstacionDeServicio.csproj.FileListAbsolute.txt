@@ -20,3 +20,14 @@ C:\Desarrollo\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio
 C:\Desarrollo\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.csproj.CoreCompileInputs.cache
 C:\Desarrollo\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.exe
 C:\Desarrollo\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.pdb
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\bin\Debug\EstacionDeServicio.exe.config
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\bin\Debug\EstacionDeServicio.exe
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\bin\Debug\EstacionDeServicio.pdb
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.csprojAssemblyReference.cache
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.FrmMenu.resources
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.FrontEnd.FrmSurtidor.resources
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.Properties.Resources.resources
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.csproj.GenerateResource.cache
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.csproj.CoreCompileInputs.cache
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.exe
+C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\Program II\EstacionDeServicio\EstacionDeServicio\obj\Debug\EstacionDeServicio.pdb

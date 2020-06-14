@@ -75,9 +75,11 @@ namespace EstacionDeServicio
         private void LlenarDatos()
         {
             //Llenamos los datos de la estacion
-            lblStationName.Text = $"Estación: {_objOperaciones.estacion.estbNombre}";
+            lblStationName.Text = $"ESTACIÓN DE SERVICIOS {_objOperaciones.estacion.estbNombre}";
             lblCUIT.Text = $"CUIT: {_objOperaciones.estacion.estbCUIT}";
             lblAddress.Text = $"Dirección: {_objOperaciones.estacion.estbDireccion}";
+            lblPhone.Text = $"Telefono: {_objOperaciones.estacion.estbTelefono}";
+            lblHours.Text = $"Horario: {_objOperaciones.estacion.estbHorario}";
 
             //Llenamos los datos de los tanques
             //Diesel

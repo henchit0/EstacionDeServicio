@@ -23,7 +23,7 @@ namespace EstacionDeServicio
 
         static private Operaciones Iniciar()
         {
-            EstacionFsociety objEstbUno = new EstacionFsociety(1,"20332030702","FSociety","1569006357","Jose Juan Biedma 435","Lun. a Dom. 24hs");
+            EstacionFsociety objEstbUno = new EstacionFsociety(1,"20332030702","FSociety", "43516655", "Jose Juan Biedma 435","Lun. a Dom. 24hs");
             
             Tanque objTanqueDiesel = new Tanque(1, "Diesel", 2000, 2000,10);
             Tanque objTanqueSuper = new Tanque(1, "Super", 3000, 3000,25);
