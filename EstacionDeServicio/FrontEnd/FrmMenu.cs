@@ -104,8 +104,9 @@ namespace EstacionDeServicio
             lblCantOperacionesPremium.Text = $"Cant. Operaciones: {surtidorPremium.cantOperaciones}";
             lblMontoTotalPremium.Text = $"Monto Total: ${surtidorPremium.montoSurtido}";
             //Operaciones
-            label1.Text = $"Total facturado: ${_objOperaciones.totalFacturado}";
-            label2.Text = $"Total lts. Surtidos: ${_objOperaciones.totalLitros}";
+            lblMontoTotal.Text = $"Total lts. Surtidos: {_objOperaciones.totalLitros}lts.";
+            lblTotalFacturado.Text = $"Total facturado: ${_objOperaciones.totalFacturado}";
+            
         }
 
         private void CalcularTotales()

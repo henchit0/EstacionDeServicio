@@ -38,37 +38,36 @@
 			this.btnDiesel = new System.Windows.Forms.Button();
 			this.btnSuper = new System.Windows.Forms.Button();
 			this.btnPremium = new System.Windows.Forms.Button();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.gbxDiesel = new System.Windows.Forms.GroupBox();
 			this.lblMontoTotalDiesel = new System.Windows.Forms.Label();
 			this.lblTotalLitrosDiesel = new System.Windows.Forms.Label();
 			this.lblCantOperacionesDiesel = new System.Windows.Forms.Label();
 			this.lblDisponibleDiesel = new System.Windows.Forms.Label();
 			this.lblCapacidadDiesel = new System.Windows.Forms.Label();
 			this.lblPlayeroDiesel = new System.Windows.Forms.Label();
-			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.gbxSuper = new System.Windows.Forms.GroupBox();
 			this.lblMontoTotalSuper = new System.Windows.Forms.Label();
 			this.lblPlayeroSuper = new System.Windows.Forms.Label();
 			this.lblTotalLitrosSuper = new System.Windows.Forms.Label();
 			this.lblCapacidadSuper = new System.Windows.Forms.Label();
 			this.lblCantOperacionesSuper = new System.Windows.Forms.Label();
 			this.lblDisponibleSuper = new System.Windows.Forms.Label();
-			this.groupBox4 = new System.Windows.Forms.GroupBox();
+			this.gbxPremiun = new System.Windows.Forms.GroupBox();
 			this.lblMontoTotalPremium = new System.Windows.Forms.Label();
 			this.lblPlayeroPremium = new System.Windows.Forms.Label();
 			this.lblTotalLitrosPremium = new System.Windows.Forms.Label();
 			this.lblCapacidadPremium = new System.Windows.Forms.Label();
 			this.lblCantOperacionesPremium = new System.Windows.Forms.Label();
 			this.lblDisponiblePremium = new System.Windows.Forms.Label();
-			this.groupBox5 = new System.Windows.Forms.GroupBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
+			this.gbxTotalGeneral = new System.Windows.Forms.GroupBox();
+			this.lblMontoTotal = new System.Windows.Forms.Label();
+			this.lblTotalFacturado = new System.Windows.Forms.Label();
 			this.btnCerrar = new System.Windows.Forms.Button();
 			this.gbxDatosEstacion.SuspendLayout();
-			this.groupBox2.SuspendLayout();
-			this.groupBox3.SuspendLayout();
-			this.groupBox4.SuspendLayout();
-			this.groupBox5.SuspendLayout();
+			this.gbxDiesel.SuspendLayout();
+			this.gbxSuper.SuspendLayout();
+			this.gbxPremiun.SuspendLayout();
+			this.gbxTotalGeneral.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// gbxDatosEstacion
@@ -78,6 +77,7 @@
 			this.gbxDatosEstacion.Controls.Add(this.lblAddress);
 			this.gbxDatosEstacion.Controls.Add(this.lblCUIT);
 			this.gbxDatosEstacion.Controls.Add(this.lblStationName);
+			this.gbxDatosEstacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.gbxDatosEstacion.ForeColor = System.Drawing.Color.Navy;
 			this.gbxDatosEstacion.Location = new System.Drawing.Point(12, 12);
 			this.gbxDatosEstacion.Name = "gbxDatosEstacion";
@@ -184,42 +184,43 @@
 			this.btnPremium.UseVisualStyleBackColor = false;
 			this.btnPremium.Click += new System.EventHandler(this.btnPremium_Click);
 			// 
-			// groupBox2
+			// gbxDiesel
 			// 
-			this.groupBox2.Controls.Add(this.lblMontoTotalDiesel);
-			this.groupBox2.Controls.Add(this.lblTotalLitrosDiesel);
-			this.groupBox2.Controls.Add(this.lblCantOperacionesDiesel);
-			this.groupBox2.Controls.Add(this.lblDisponibleDiesel);
-			this.groupBox2.Controls.Add(this.lblCapacidadDiesel);
-			this.groupBox2.Controls.Add(this.lblPlayeroDiesel);
-			this.groupBox2.Location = new System.Drawing.Point(25, 206);
-			this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-			this.groupBox2.Size = new System.Drawing.Size(130, 130);
-			this.groupBox2.TabIndex = 3;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+			this.gbxDiesel.Controls.Add(this.lblMontoTotalDiesel);
+			this.gbxDiesel.Controls.Add(this.lblTotalLitrosDiesel);
+			this.gbxDiesel.Controls.Add(this.lblCantOperacionesDiesel);
+			this.gbxDiesel.Controls.Add(this.lblDisponibleDiesel);
+			this.gbxDiesel.Controls.Add(this.lblCapacidadDiesel);
+			this.gbxDiesel.Controls.Add(this.lblPlayeroDiesel);
+			this.gbxDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gbxDiesel.ForeColor = System.Drawing.Color.Teal;
+			this.gbxDiesel.Location = new System.Drawing.Point(12, 241);
+			this.gbxDiesel.Name = "gbxDiesel";
+			this.gbxDiesel.Size = new System.Drawing.Size(206, 239);
+			this.gbxDiesel.TabIndex = 3;
+			this.gbxDiesel.TabStop = false;
+			this.gbxDiesel.Text = "Diesel";
+			this.gbxDiesel.Enter += new System.EventHandler(this.groupBox2_Enter);
 			// 
 			// lblMontoTotalDiesel
 			// 
 			this.lblMontoTotalDiesel.AutoSize = true;
-			this.lblMontoTotalDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblMontoTotalDiesel.Location = new System.Drawing.Point(4, 100);
-			this.lblMontoTotalDiesel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblMontoTotalDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblMontoTotalDiesel.Location = new System.Drawing.Point(7, 185);
+			this.lblMontoTotalDiesel.Margin = new System.Windows.Forms.Padding(3);
 			this.lblMontoTotalDiesel.Name = "lblMontoTotalDiesel";
-			this.lblMontoTotalDiesel.Size = new System.Drawing.Size(69, 15);
+			this.lblMontoTotalDiesel.Size = new System.Drawing.Size(99, 20);
 			this.lblMontoTotalDiesel.TabIndex = 3;
 			this.lblMontoTotalDiesel.Text = "montoTotal";
 			// 
 			// lblTotalLitrosDiesel
 			// 
 			this.lblTotalLitrosDiesel.AutoSize = true;
-			this.lblTotalLitrosDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTotalLitrosDiesel.Location = new System.Drawing.Point(5, 83);
-			this.lblTotalLitrosDiesel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblTotalLitrosDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTotalLitrosDiesel.Location = new System.Drawing.Point(7, 165);
+			this.lblTotalLitrosDiesel.Margin = new System.Windows.Forms.Padding(3);
 			this.lblTotalLitrosDiesel.Name = "lblTotalLitrosDiesel";
-			this.lblTotalLitrosDiesel.Size = new System.Drawing.Size(60, 15);
+			this.lblTotalLitrosDiesel.Size = new System.Drawing.Size(90, 20);
 			this.lblTotalLitrosDiesel.TabIndex = 3;
 			this.lblTotalLitrosDiesel.Text = "totalLitros";
 			this.lblTotalLitrosDiesel.Click += new System.EventHandler(this.lblTotalLitrosDiesel_Click);
@@ -227,11 +228,11 @@
 			// lblCantOperacionesDiesel
 			// 
 			this.lblCantOperacionesDiesel.AutoSize = true;
-			this.lblCantOperacionesDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblCantOperacionesDiesel.Location = new System.Drawing.Point(4, 66);
-			this.lblCantOperacionesDiesel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblCantOperacionesDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCantOperacionesDiesel.Location = new System.Drawing.Point(7, 145);
+			this.lblCantOperacionesDiesel.Margin = new System.Windows.Forms.Padding(3);
 			this.lblCantOperacionesDiesel.Name = "lblCantOperacionesDiesel";
-			this.lblCantOperacionesDiesel.Size = new System.Drawing.Size(100, 15);
+			this.lblCantOperacionesDiesel.Size = new System.Drawing.Size(145, 20);
 			this.lblCantOperacionesDiesel.TabIndex = 3;
 			this.lblCantOperacionesDiesel.Text = "cantOperaciones";
 			this.lblCantOperacionesDiesel.Click += new System.EventHandler(this.lblOperacionesDiesel_Click);
@@ -239,11 +240,11 @@
 			// lblDisponibleDiesel
 			// 
 			this.lblDisponibleDiesel.AutoSize = true;
-			this.lblDisponibleDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblDisponibleDiesel.Location = new System.Drawing.Point(4, 49);
-			this.lblDisponibleDiesel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblDisponibleDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblDisponibleDiesel.Location = new System.Drawing.Point(7, 103);
+			this.lblDisponibleDiesel.Margin = new System.Windows.Forms.Padding(3);
 			this.lblDisponibleDiesel.Name = "lblDisponibleDiesel";
-			this.lblDisponibleDiesel.Size = new System.Drawing.Size(64, 15);
+			this.lblDisponibleDiesel.Size = new System.Drawing.Size(90, 20);
 			this.lblDisponibleDiesel.TabIndex = 3;
 			this.lblDisponibleDiesel.Text = "disponible";
 			this.lblDisponibleDiesel.Click += new System.EventHandler(this.lblDisponibleDiesel_Click);
@@ -251,11 +252,11 @@
 			// lblCapacidadDiesel
 			// 
 			this.lblCapacidadDiesel.AutoSize = true;
-			this.lblCapacidadDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblCapacidadDiesel.Location = new System.Drawing.Point(4, 32);
-			this.lblCapacidadDiesel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblCapacidadDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCapacidadDiesel.Location = new System.Drawing.Point(7, 83);
+			this.lblCapacidadDiesel.Margin = new System.Windows.Forms.Padding(3);
 			this.lblCapacidadDiesel.Name = "lblCapacidadDiesel";
-			this.lblCapacidadDiesel.Size = new System.Drawing.Size(64, 15);
+			this.lblCapacidadDiesel.Size = new System.Drawing.Size(91, 20);
 			this.lblCapacidadDiesel.TabIndex = 3;
 			this.lblCapacidadDiesel.Text = "capacidad";
 			this.lblCapacidadDiesel.Click += new System.EventHandler(this.lblCapacidadDiesel_Click);
@@ -263,223 +264,227 @@
 			// lblPlayeroDiesel
 			// 
 			this.lblPlayeroDiesel.AutoSize = true;
-			this.lblPlayeroDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblPlayeroDiesel.Location = new System.Drawing.Point(4, 15);
-			this.lblPlayeroDiesel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblPlayeroDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblPlayeroDiesel.Location = new System.Drawing.Point(10, 40);
+			this.lblPlayeroDiesel.Margin = new System.Windows.Forms.Padding(3);
 			this.lblPlayeroDiesel.Name = "lblPlayeroDiesel";
-			this.lblPlayeroDiesel.Size = new System.Drawing.Size(47, 15);
+			this.lblPlayeroDiesel.Size = new System.Drawing.Size(60, 20);
 			this.lblPlayeroDiesel.TabIndex = 3;
 			this.lblPlayeroDiesel.Text = "playero";
 			// 
-			// groupBox3
+			// gbxSuper
 			// 
-			this.groupBox3.Controls.Add(this.lblMontoTotalSuper);
-			this.groupBox3.Controls.Add(this.lblPlayeroSuper);
-			this.groupBox3.Controls.Add(this.lblTotalLitrosSuper);
-			this.groupBox3.Controls.Add(this.lblCapacidadSuper);
-			this.groupBox3.Controls.Add(this.lblCantOperacionesSuper);
-			this.groupBox3.Controls.Add(this.lblDisponibleSuper);
-			this.groupBox3.Location = new System.Drawing.Point(220, 206);
-			this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
-			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-			this.groupBox3.Size = new System.Drawing.Size(130, 130);
-			this.groupBox3.TabIndex = 4;
-			this.groupBox3.TabStop = false;
+			this.gbxSuper.Controls.Add(this.lblMontoTotalSuper);
+			this.gbxSuper.Controls.Add(this.lblPlayeroSuper);
+			this.gbxSuper.Controls.Add(this.lblTotalLitrosSuper);
+			this.gbxSuper.Controls.Add(this.lblCapacidadSuper);
+			this.gbxSuper.Controls.Add(this.lblCantOperacionesSuper);
+			this.gbxSuper.Controls.Add(this.lblDisponibleSuper);
+			this.gbxSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gbxSuper.ForeColor = System.Drawing.Color.Maroon;
+			this.gbxSuper.Location = new System.Drawing.Point(257, 241);
+			this.gbxSuper.Name = "gbxSuper";
+			this.gbxSuper.Size = new System.Drawing.Size(207, 239);
+			this.gbxSuper.TabIndex = 4;
+			this.gbxSuper.TabStop = false;
+			this.gbxSuper.Text = "Super";
 			// 
 			// lblMontoTotalSuper
 			// 
 			this.lblMontoTotalSuper.AutoSize = true;
-			this.lblMontoTotalSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblMontoTotalSuper.Location = new System.Drawing.Point(4, 100);
-			this.lblMontoTotalSuper.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblMontoTotalSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblMontoTotalSuper.Location = new System.Drawing.Point(7, 185);
+			this.lblMontoTotalSuper.Margin = new System.Windows.Forms.Padding(3);
 			this.lblMontoTotalSuper.Name = "lblMontoTotalSuper";
-			this.lblMontoTotalSuper.Size = new System.Drawing.Size(69, 15);
+			this.lblMontoTotalSuper.Size = new System.Drawing.Size(99, 20);
 			this.lblMontoTotalSuper.TabIndex = 4;
 			this.lblMontoTotalSuper.Text = "montoTotal";
 			// 
 			// lblPlayeroSuper
 			// 
 			this.lblPlayeroSuper.AutoSize = true;
-			this.lblPlayeroSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblPlayeroSuper.Location = new System.Drawing.Point(4, 15);
-			this.lblPlayeroSuper.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblPlayeroSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblPlayeroSuper.Location = new System.Drawing.Point(7, 40);
+			this.lblPlayeroSuper.Margin = new System.Windows.Forms.Padding(3);
 			this.lblPlayeroSuper.Name = "lblPlayeroSuper";
-			this.lblPlayeroSuper.Size = new System.Drawing.Size(47, 15);
+			this.lblPlayeroSuper.Size = new System.Drawing.Size(60, 20);
 			this.lblPlayeroSuper.TabIndex = 9;
 			this.lblPlayeroSuper.Text = "playero";
 			// 
 			// lblTotalLitrosSuper
 			// 
 			this.lblTotalLitrosSuper.AutoSize = true;
-			this.lblTotalLitrosSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTotalLitrosSuper.Location = new System.Drawing.Point(5, 83);
-			this.lblTotalLitrosSuper.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblTotalLitrosSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTotalLitrosSuper.Location = new System.Drawing.Point(7, 165);
+			this.lblTotalLitrosSuper.Margin = new System.Windows.Forms.Padding(3);
 			this.lblTotalLitrosSuper.Name = "lblTotalLitrosSuper";
-			this.lblTotalLitrosSuper.Size = new System.Drawing.Size(60, 15);
+			this.lblTotalLitrosSuper.Size = new System.Drawing.Size(90, 20);
 			this.lblTotalLitrosSuper.TabIndex = 5;
 			this.lblTotalLitrosSuper.Text = "totalLitros";
 			// 
 			// lblCapacidadSuper
 			// 
 			this.lblCapacidadSuper.AutoSize = true;
-			this.lblCapacidadSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblCapacidadSuper.Location = new System.Drawing.Point(4, 32);
+			this.lblCapacidadSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCapacidadSuper.Location = new System.Drawing.Point(7, 83);
 			this.lblCapacidadSuper.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
 			this.lblCapacidadSuper.Name = "lblCapacidadSuper";
-			this.lblCapacidadSuper.Size = new System.Drawing.Size(64, 15);
+			this.lblCapacidadSuper.Size = new System.Drawing.Size(91, 20);
 			this.lblCapacidadSuper.TabIndex = 8;
 			this.lblCapacidadSuper.Text = "capacidad";
 			// 
 			// lblCantOperacionesSuper
 			// 
 			this.lblCantOperacionesSuper.AutoSize = true;
-			this.lblCantOperacionesSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblCantOperacionesSuper.Location = new System.Drawing.Point(4, 66);
-			this.lblCantOperacionesSuper.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblCantOperacionesSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCantOperacionesSuper.Location = new System.Drawing.Point(7, 145);
+			this.lblCantOperacionesSuper.Margin = new System.Windows.Forms.Padding(3);
 			this.lblCantOperacionesSuper.Name = "lblCantOperacionesSuper";
-			this.lblCantOperacionesSuper.Size = new System.Drawing.Size(100, 15);
+			this.lblCantOperacionesSuper.Size = new System.Drawing.Size(145, 20);
 			this.lblCantOperacionesSuper.TabIndex = 6;
 			this.lblCantOperacionesSuper.Text = "cantOperaciones";
 			// 
 			// lblDisponibleSuper
 			// 
 			this.lblDisponibleSuper.AutoSize = true;
-			this.lblDisponibleSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblDisponibleSuper.Location = new System.Drawing.Point(4, 49);
-			this.lblDisponibleSuper.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblDisponibleSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblDisponibleSuper.Location = new System.Drawing.Point(7, 103);
+			this.lblDisponibleSuper.Margin = new System.Windows.Forms.Padding(3);
 			this.lblDisponibleSuper.Name = "lblDisponibleSuper";
-			this.lblDisponibleSuper.Size = new System.Drawing.Size(64, 15);
+			this.lblDisponibleSuper.Size = new System.Drawing.Size(90, 20);
 			this.lblDisponibleSuper.TabIndex = 7;
 			this.lblDisponibleSuper.Text = "disponible";
 			// 
-			// groupBox4
+			// gbxPremiun
 			// 
-			this.groupBox4.Controls.Add(this.lblMontoTotalPremium);
-			this.groupBox4.Controls.Add(this.lblPlayeroPremium);
-			this.groupBox4.Controls.Add(this.lblTotalLitrosPremium);
-			this.groupBox4.Controls.Add(this.lblCapacidadPremium);
-			this.groupBox4.Controls.Add(this.lblCantOperacionesPremium);
-			this.groupBox4.Controls.Add(this.lblDisponiblePremium);
-			this.groupBox4.Location = new System.Drawing.Point(431, 206);
-			this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
-			this.groupBox4.Name = "groupBox4";
-			this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-			this.groupBox4.Size = new System.Drawing.Size(128, 130);
-			this.groupBox4.TabIndex = 4;
-			this.groupBox4.TabStop = false;
+			this.gbxPremiun.Controls.Add(this.lblMontoTotalPremium);
+			this.gbxPremiun.Controls.Add(this.lblPlayeroPremium);
+			this.gbxPremiun.Controls.Add(this.lblTotalLitrosPremium);
+			this.gbxPremiun.Controls.Add(this.lblCapacidadPremium);
+			this.gbxPremiun.Controls.Add(this.lblCantOperacionesPremium);
+			this.gbxPremiun.Controls.Add(this.lblDisponiblePremium);
+			this.gbxPremiun.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gbxPremiun.ForeColor = System.Drawing.Color.Green;
+			this.gbxPremiun.Location = new System.Drawing.Point(509, 241);
+			this.gbxPremiun.Name = "gbxPremiun";
+			this.gbxPremiun.Size = new System.Drawing.Size(207, 239);
+			this.gbxPremiun.TabIndex = 4;
+			this.gbxPremiun.TabStop = false;
+			this.gbxPremiun.Text = "Premiun";
 			// 
 			// lblMontoTotalPremium
 			// 
 			this.lblMontoTotalPremium.AutoSize = true;
-			this.lblMontoTotalPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblMontoTotalPremium.Location = new System.Drawing.Point(4, 100);
-			this.lblMontoTotalPremium.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblMontoTotalPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblMontoTotalPremium.Location = new System.Drawing.Point(7, 185);
+			this.lblMontoTotalPremium.Margin = new System.Windows.Forms.Padding(3);
 			this.lblMontoTotalPremium.Name = "lblMontoTotalPremium";
-			this.lblMontoTotalPremium.Size = new System.Drawing.Size(69, 15);
+			this.lblMontoTotalPremium.Size = new System.Drawing.Size(99, 20);
 			this.lblMontoTotalPremium.TabIndex = 10;
 			this.lblMontoTotalPremium.Text = "montoTotal";
 			// 
 			// lblPlayeroPremium
 			// 
 			this.lblPlayeroPremium.AutoSize = true;
-			this.lblPlayeroPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblPlayeroPremium.Location = new System.Drawing.Point(4, 15);
-			this.lblPlayeroPremium.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblPlayeroPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblPlayeroPremium.Location = new System.Drawing.Point(7, 40);
+			this.lblPlayeroPremium.Margin = new System.Windows.Forms.Padding(3);
 			this.lblPlayeroPremium.Name = "lblPlayeroPremium";
-			this.lblPlayeroPremium.Size = new System.Drawing.Size(47, 15);
+			this.lblPlayeroPremium.Size = new System.Drawing.Size(60, 20);
 			this.lblPlayeroPremium.TabIndex = 15;
 			this.lblPlayeroPremium.Text = "playero";
 			// 
 			// lblTotalLitrosPremium
 			// 
 			this.lblTotalLitrosPremium.AutoSize = true;
-			this.lblTotalLitrosPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTotalLitrosPremium.Location = new System.Drawing.Point(5, 83);
-			this.lblTotalLitrosPremium.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblTotalLitrosPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTotalLitrosPremium.Location = new System.Drawing.Point(7, 165);
+			this.lblTotalLitrosPremium.Margin = new System.Windows.Forms.Padding(3);
 			this.lblTotalLitrosPremium.Name = "lblTotalLitrosPremium";
-			this.lblTotalLitrosPremium.Size = new System.Drawing.Size(60, 15);
+			this.lblTotalLitrosPremium.Size = new System.Drawing.Size(90, 20);
 			this.lblTotalLitrosPremium.TabIndex = 11;
 			this.lblTotalLitrosPremium.Text = "totalLitros";
 			// 
 			// lblCapacidadPremium
 			// 
 			this.lblCapacidadPremium.AutoSize = true;
-			this.lblCapacidadPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblCapacidadPremium.Location = new System.Drawing.Point(4, 32);
-			this.lblCapacidadPremium.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblCapacidadPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCapacidadPremium.Location = new System.Drawing.Point(7, 83);
+			this.lblCapacidadPremium.Margin = new System.Windows.Forms.Padding(3);
 			this.lblCapacidadPremium.Name = "lblCapacidadPremium";
-			this.lblCapacidadPremium.Size = new System.Drawing.Size(64, 15);
+			this.lblCapacidadPremium.Size = new System.Drawing.Size(91, 20);
 			this.lblCapacidadPremium.TabIndex = 14;
 			this.lblCapacidadPremium.Text = "capacidad";
 			// 
 			// lblCantOperacionesPremium
 			// 
 			this.lblCantOperacionesPremium.AutoSize = true;
-			this.lblCantOperacionesPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblCantOperacionesPremium.Location = new System.Drawing.Point(4, 66);
-			this.lblCantOperacionesPremium.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblCantOperacionesPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCantOperacionesPremium.Location = new System.Drawing.Point(7, 145);
+			this.lblCantOperacionesPremium.Margin = new System.Windows.Forms.Padding(3);
 			this.lblCantOperacionesPremium.Name = "lblCantOperacionesPremium";
-			this.lblCantOperacionesPremium.Size = new System.Drawing.Size(100, 15);
+			this.lblCantOperacionesPremium.Size = new System.Drawing.Size(145, 20);
 			this.lblCantOperacionesPremium.TabIndex = 12;
 			this.lblCantOperacionesPremium.Text = "cantOperaciones";
 			// 
 			// lblDisponiblePremium
 			// 
 			this.lblDisponiblePremium.AutoSize = true;
-			this.lblDisponiblePremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblDisponiblePremium.Location = new System.Drawing.Point(4, 49);
-			this.lblDisponiblePremium.Margin = new System.Windows.Forms.Padding(2, 0, 2, 2);
+			this.lblDisponiblePremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblDisponiblePremium.Location = new System.Drawing.Point(7, 103);
+			this.lblDisponiblePremium.Margin = new System.Windows.Forms.Padding(3);
 			this.lblDisponiblePremium.Name = "lblDisponiblePremium";
-			this.lblDisponiblePremium.Size = new System.Drawing.Size(64, 15);
+			this.lblDisponiblePremium.Size = new System.Drawing.Size(90, 20);
 			this.lblDisponiblePremium.TabIndex = 13;
 			this.lblDisponiblePremium.Text = "disponible";
 			// 
-			// groupBox5
+			// gbxTotalGeneral
 			// 
-			this.groupBox5.Controls.Add(this.label3);
-			this.groupBox5.Controls.Add(this.label2);
-			this.groupBox5.Controls.Add(this.label1);
-			this.groupBox5.Location = new System.Drawing.Point(32, 342);
-			this.groupBox5.Name = "groupBox5";
-			this.groupBox5.Size = new System.Drawing.Size(524, 113);
-			this.groupBox5.TabIndex = 5;
-			this.groupBox5.TabStop = false;
-			this.groupBox5.Text = "groupBox5";
+			this.gbxTotalGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.gbxTotalGeneral.Controls.Add(this.lblMontoTotal);
+			this.gbxTotalGeneral.Controls.Add(this.lblTotalFacturado);
+			this.gbxTotalGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gbxTotalGeneral.ForeColor = System.Drawing.Color.Navy;
+			this.gbxTotalGeneral.Location = new System.Drawing.Point(189, 508);
+			this.gbxTotalGeneral.Name = "gbxTotalGeneral";
+			this.gbxTotalGeneral.Size = new System.Drawing.Size(369, 86);
+			this.gbxTotalGeneral.TabIndex = 5;
+			this.gbxTotalGeneral.TabStop = false;
+			this.gbxTotalGeneral.Text = "Total General";
 			// 
-			// label3
+			// lblMontoTotal
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(226, 72);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(35, 13);
-			this.label3.TabIndex = 2;
-			this.label3.Text = "label3";
+			this.lblMontoTotal.AutoSize = true;
+			this.lblMontoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblMontoTotal.Location = new System.Drawing.Point(99, 25);
+			this.lblMontoTotal.Name = "lblMontoTotal";
+			this.lblMontoTotal.Size = new System.Drawing.Size(114, 24);
+			this.lblMontoTotal.TabIndex = 1;
+			this.lblMontoTotal.Text = "MontoTotal";
+			this.lblMontoTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// label2
+			// lblTotalFacturado
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(226, 40);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(35, 13);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "label2";
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(226, 16);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(35, 13);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "label1";
+			this.lblTotalFacturado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.lblTotalFacturado.AutoSize = true;
+			this.lblTotalFacturado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTotalFacturado.Location = new System.Drawing.Point(99, 49);
+			this.lblTotalFacturado.Name = "lblTotalFacturado";
+			this.lblTotalFacturado.Size = new System.Drawing.Size(156, 24);
+			this.lblTotalFacturado.TabIndex = 0;
+			this.lblTotalFacturado.Text = "Total Facturado";
+			this.lblTotalFacturado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// btnCerrar
 			// 
 			this.btnCerrar.BackColor = System.Drawing.Color.SteelBlue;
 			this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.btnCerrar.Location = new System.Drawing.Point(643, 524);
+			this.btnCerrar.Location = new System.Drawing.Point(644, 568);
 			this.btnCerrar.Name = "btnCerrar";
 			this.btnCerrar.Size = new System.Drawing.Size(75, 30);
 			this.btnCerrar.TabIndex = 9;
@@ -492,12 +497,12 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-			this.ClientSize = new System.Drawing.Size(730, 566);
+			this.ClientSize = new System.Drawing.Size(731, 610);
 			this.Controls.Add(this.btnCerrar);
-			this.Controls.Add(this.groupBox5);
-			this.Controls.Add(this.groupBox3);
-			this.Controls.Add(this.groupBox4);
-			this.Controls.Add(this.groupBox2);
+			this.Controls.Add(this.gbxTotalGeneral);
+			this.Controls.Add(this.gbxSuper);
+			this.Controls.Add(this.gbxPremiun);
+			this.Controls.Add(this.gbxDiesel);
 			this.Controls.Add(this.btnPremium);
 			this.Controls.Add(this.btnSuper);
 			this.Controls.Add(this.btnDiesel);
@@ -511,14 +516,14 @@
 			this.Load += new System.EventHandler(this.FrmMenu_Load);
 			this.gbxDatosEstacion.ResumeLayout(false);
 			this.gbxDatosEstacion.PerformLayout();
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox2.PerformLayout();
-			this.groupBox3.ResumeLayout(false);
-			this.groupBox3.PerformLayout();
-			this.groupBox4.ResumeLayout(false);
-			this.groupBox4.PerformLayout();
-			this.groupBox5.ResumeLayout(false);
-			this.groupBox5.PerformLayout();
+			this.gbxDiesel.ResumeLayout(false);
+			this.gbxDiesel.PerformLayout();
+			this.gbxSuper.ResumeLayout(false);
+			this.gbxSuper.PerformLayout();
+			this.gbxPremiun.ResumeLayout(false);
+			this.gbxPremiun.PerformLayout();
+			this.gbxTotalGeneral.ResumeLayout(false);
+			this.gbxTotalGeneral.PerformLayout();
 			this.ResumeLayout(false);
 
         }
@@ -531,10 +536,10 @@
         private System.Windows.Forms.Label lblStationName;
         private System.Windows.Forms.Button btnDiesel;
         private System.Windows.Forms.Button btnPremium;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbxDiesel;
         private System.Windows.Forms.Button btnSuper;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gbxSuper;
+        private System.Windows.Forms.GroupBox gbxPremiun;
         private System.Windows.Forms.Label lblPlayeroDiesel;
         private System.Windows.Forms.Label lblMontoTotalDiesel;
         private System.Windows.Forms.Label lblTotalLitrosDiesel;
@@ -542,7 +547,6 @@
         private System.Windows.Forms.Label lblDisponibleDiesel;
         private System.Windows.Forms.Label lblCapacidadDiesel;
         private System.Windows.Forms.Label lblMontoTotalSuper;
-        private System.Windows.Forms.Label lblPlayeroSuper;
         private System.Windows.Forms.Label lblTotalLitrosSuper;
         private System.Windows.Forms.Label lblCapacidadSuper;
         private System.Windows.Forms.Label lblCantOperacionesSuper;
@@ -553,13 +557,13 @@
         private System.Windows.Forms.Label lblCapacidadPremium;
         private System.Windows.Forms.Label lblCantOperacionesPremium;
         private System.Windows.Forms.Label lblDisponiblePremium;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox gbxTotalGeneral;
+        private System.Windows.Forms.Label lblMontoTotal;
+        private System.Windows.Forms.Label lblTotalFacturado;
 		private System.Windows.Forms.Label lblHours;
 		private System.Windows.Forms.Label lblPhone;
 		private System.Windows.Forms.Button btnCerrar;
+		private System.Windows.Forms.Label lblPlayeroSuper;
 	}
 }
 
