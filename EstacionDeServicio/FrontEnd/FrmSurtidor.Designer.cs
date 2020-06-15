@@ -56,7 +56,7 @@
 			// 
 			this.lblSurtidor.AutoSize = true;
 			this.lblSurtidor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblSurtidor.Location = new System.Drawing.Point(12, 28);
+			this.lblSurtidor.Location = new System.Drawing.Point(23, 22);
 			this.lblSurtidor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.lblSurtidor.Name = "lblSurtidor";
 			this.lblSurtidor.Size = new System.Drawing.Size(42, 25);
@@ -84,7 +84,7 @@
 			this.btnFinalizar.Enabled = false;
 			this.btnFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnFinalizar.Location = new System.Drawing.Point(295, 234);
+			this.btnFinalizar.Location = new System.Drawing.Point(301, 280);
 			this.btnFinalizar.Name = "btnFinalizar";
 			this.btnFinalizar.Size = new System.Drawing.Size(103, 47);
 			this.btnFinalizar.TabIndex = 3;
@@ -99,7 +99,7 @@
 			this.btnCobrar.Enabled = false;
 			this.btnCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnCobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCobrar.Location = new System.Drawing.Point(154, 303);
+			this.btnCobrar.Location = new System.Drawing.Point(160, 333);
 			this.btnCobrar.Name = "btnCobrar";
 			this.btnCobrar.Size = new System.Drawing.Size(244, 47);
 			this.btnCobrar.TabIndex = 4;
@@ -113,7 +113,7 @@
 			this.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnVolver.Location = new System.Drawing.Point(467, 336);
+			this.btnVolver.Location = new System.Drawing.Point(489, 352);
 			this.btnVolver.Name = "btnVolver";
 			this.btnVolver.Size = new System.Drawing.Size(65, 28);
 			this.btnVolver.TabIndex = 5;
@@ -180,11 +180,15 @@
 			// lblCobrado
 			// 
 			this.lblCobrado.AutoSize = true;
-			this.lblCobrado.Location = new System.Drawing.Point(7, 218);
+			this.lblCobrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCobrado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+			this.lblCobrado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.lblCobrado.Location = new System.Drawing.Point(155, 240);
 			this.lblCobrado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.lblCobrado.Name = "lblCobrado";
-			this.lblCobrado.Size = new System.Drawing.Size(0, 13);
+			this.lblCobrado.Size = new System.Drawing.Size(0, 25);
 			this.lblCobrado.TabIndex = 10;
+			this.lblCobrado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// gbxSurtidor
 			// 
@@ -194,9 +198,9 @@
 			this.gbxSurtidor.Controls.Add(this.lblMontoSurtido);
 			this.gbxSurtidor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.gbxSurtidor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-			this.gbxSurtidor.Location = new System.Drawing.Point(16, 12);
+			this.gbxSurtidor.Location = new System.Drawing.Point(12, 12);
 			this.gbxSurtidor.Name = "gbxSurtidor";
-			this.gbxSurtidor.Size = new System.Drawing.Size(516, 208);
+			this.gbxSurtidor.Size = new System.Drawing.Size(542, 215);
 			this.gbxSurtidor.TabIndex = 11;
 			this.gbxSurtidor.TabStop = false;
 			this.gbxSurtidor.Text = "Surtidor";
@@ -241,7 +245,7 @@
 			this.gbxTanque.Size = new System.Drawing.Size(286, 142);
 			this.gbxTanque.TabIndex = 11;
 			this.gbxTanque.TabStop = false;
-			this.gbxTanque.Text = "Tanque";
+			this.gbxTanque.Text = "Datos del tanque";
 			// 
 			// btnSurtir
 			// 
@@ -249,7 +253,7 @@
 			this.btnSurtir.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnSurtir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnSurtir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSurtir.Location = new System.Drawing.Point(154, 234);
+			this.btnSurtir.Location = new System.Drawing.Point(160, 280);
 			this.btnSurtir.Name = "btnSurtir";
 			this.btnSurtir.Size = new System.Drawing.Size(105, 47);
 			this.btnSurtir.TabIndex = 2;
@@ -263,7 +267,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
 			this.BackColor = System.Drawing.SystemColors.GrayText;
-			this.ClientSize = new System.Drawing.Size(543, 375);
+			this.ClientSize = new System.Drawing.Size(566, 392);
 			this.Controls.Add(this.gbxSurtidor);
 			this.Controls.Add(this.lblCobrado);
 			this.Controls.Add(this.btnVolver);
@@ -276,6 +280,7 @@
 			this.Name = "FrmSurtidor";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmSurtidor";
+			this.Load += new System.EventHandler(this.FrmSurtidor_Load);
 			((System.ComponentModel.ISupportInitialize)(this.numLitros)).EndInit();
 			this.gbxSurtidor.ResumeLayout(false);
 			this.gbxSurtidor.PerformLayout();

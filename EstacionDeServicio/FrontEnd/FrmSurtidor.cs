@@ -61,7 +61,7 @@ namespace EstacionDeServicio.FrontEnd
             _objSurtidor.CalcularMonto(Convert.ToInt32(numLitros.Value));
             _objSurtidor.litrosSurtidos += Convert.ToInt32(numLitros.Value);
 
-            lblCobrado.Text = $"Se cobró: ${_objSurtidor.montoSurtido}";
+            lblCobrado.Text = $"Monto a cobrar: ${_objSurtidor.montoSurtido}";
             btnSurtir.Enabled = true;
             btnCobrar.Enabled = false;
             btnVolver.Enabled = true;
@@ -96,6 +96,11 @@ namespace EstacionDeServicio.FrontEnd
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmSurtidor_Load(object sender, EventArgs e)
         {
 
         }
