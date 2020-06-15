@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
 			this.gbxDatosEstacion = new System.Windows.Forms.GroupBox();
+			this.lblHours = new System.Windows.Forms.Label();
+			this.lblPhone = new System.Windows.Forms.Label();
 			this.lblAddress = new System.Windows.Forms.Label();
 			this.lblCUIT = new System.Windows.Forms.Label();
 			this.lblStationName = new System.Windows.Forms.Label();
@@ -60,8 +63,7 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.lblPhone = new System.Windows.Forms.Label();
-			this.lblHours = new System.Windows.Forms.Label();
+			this.btnCerrar = new System.Windows.Forms.Button();
 			this.gbxDatosEstacion.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -83,6 +85,26 @@
 			this.gbxDatosEstacion.TabIndex = 3;
 			this.gbxDatosEstacion.TabStop = false;
 			this.gbxDatosEstacion.Text = "Datos de la estación";
+			// 
+			// lblHours
+			// 
+			this.lblHours.AutoSize = true;
+			this.lblHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblHours.Location = new System.Drawing.Point(494, 74);
+			this.lblHours.Name = "lblHours";
+			this.lblHours.Size = new System.Drawing.Size(187, 16);
+			this.lblHours.TabIndex = 4;
+			this.lblHours.Text = "HORARIO DE ATENCION:";
+			// 
+			// lblPhone
+			// 
+			this.lblPhone.AutoSize = true;
+			this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblPhone.Location = new System.Drawing.Point(494, 50);
+			this.lblPhone.Name = "lblPhone";
+			this.lblPhone.Size = new System.Drawing.Size(92, 16);
+			this.lblPhone.TabIndex = 3;
+			this.lblPhone.Text = "TELEFONO:";
 			// 
 			// lblAddress
 			// 
@@ -106,48 +128,60 @@
 			// 
 			// lblStationName
 			// 
+			this.lblStationName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.lblStationName.AutoSize = true;
 			this.lblStationName.Cursor = System.Windows.Forms.Cursors.Default;
-			this.lblStationName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblStationName.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblStationName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-			this.lblStationName.Location = new System.Drawing.Point(210, 16);
+			this.lblStationName.Location = new System.Drawing.Point(195, 16);
 			this.lblStationName.Name = "lblStationName";
-			this.lblStationName.Size = new System.Drawing.Size(304, 25);
+			this.lblStationName.Size = new System.Drawing.Size(275, 24);
 			this.lblStationName.TabIndex = 0;
 			this.lblStationName.Text = "NOMBRE DE LA ESTACIÓN";
 			this.lblStationName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// btnDiesel
 			// 
-			this.btnDiesel.Location = new System.Drawing.Point(44, 168);
-			this.btnDiesel.Margin = new System.Windows.Forms.Padding(2);
+			this.btnDiesel.BackColor = System.Drawing.Color.Teal;
+			this.btnDiesel.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnDiesel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.btnDiesel.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
+			this.btnDiesel.Location = new System.Drawing.Point(12, 137);
 			this.btnDiesel.Name = "btnDiesel";
-			this.btnDiesel.Size = new System.Drawing.Size(88, 32);
+			this.btnDiesel.Size = new System.Drawing.Size(206, 66);
 			this.btnDiesel.TabIndex = 1;
 			this.btnDiesel.Text = "Diesel";
-			this.btnDiesel.UseVisualStyleBackColor = true;
+			this.btnDiesel.UseVisualStyleBackColor = false;
 			this.btnDiesel.Click += new System.EventHandler(this.btnDiesel_Click);
 			// 
 			// btnSuper
 			// 
-			this.btnSuper.Location = new System.Drawing.Point(236, 168);
-			this.btnSuper.Margin = new System.Windows.Forms.Padding(2);
+			this.btnSuper.BackColor = System.Drawing.Color.Maroon;
+			this.btnSuper.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSuper.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.btnSuper.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
+			this.btnSuper.Location = new System.Drawing.Point(257, 137);
 			this.btnSuper.Name = "btnSuper";
-			this.btnSuper.Size = new System.Drawing.Size(88, 32);
+			this.btnSuper.Size = new System.Drawing.Size(207, 66);
 			this.btnSuper.TabIndex = 2;
 			this.btnSuper.Text = "Super";
-			this.btnSuper.UseVisualStyleBackColor = true;
+			this.btnSuper.UseVisualStyleBackColor = false;
 			this.btnSuper.Click += new System.EventHandler(this.btnSuper_Click);
 			// 
 			// btnPremium
 			// 
-			this.btnPremium.Location = new System.Drawing.Point(446, 168);
-			this.btnPremium.Margin = new System.Windows.Forms.Padding(2);
+			this.btnPremium.BackColor = System.Drawing.Color.Green;
+			this.btnPremium.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnPremium.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.btnPremium.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
+			this.btnPremium.Location = new System.Drawing.Point(509, 136);
 			this.btnPremium.Name = "btnPremium";
-			this.btnPremium.Size = new System.Drawing.Size(88, 32);
+			this.btnPremium.Size = new System.Drawing.Size(207, 66);
 			this.btnPremium.TabIndex = 3;
 			this.btnPremium.Text = "Premium";
-			this.btnPremium.UseVisualStyleBackColor = true;
+			this.btnPremium.UseVisualStyleBackColor = false;
 			this.btnPremium.Click += new System.EventHandler(this.btnPremium_Click);
 			// 
 			// groupBox2
@@ -440,32 +474,26 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "label1";
 			// 
-			// lblPhone
+			// btnCerrar
 			// 
-			this.lblPhone.AutoSize = true;
-			this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblPhone.Location = new System.Drawing.Point(494, 50);
-			this.lblPhone.Name = "lblPhone";
-			this.lblPhone.Size = new System.Drawing.Size(92, 16);
-			this.lblPhone.TabIndex = 3;
-			this.lblPhone.Text = "TELEFONO:";
-			// 
-			// lblHours
-			// 
-			this.lblHours.AutoSize = true;
-			this.lblHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblHours.Location = new System.Drawing.Point(494, 74);
-			this.lblHours.Name = "lblHours";
-			this.lblHours.Size = new System.Drawing.Size(187, 16);
-			this.lblHours.TabIndex = 4;
-			this.lblHours.Text = "HORARIO DE ATENCION:";
+			this.btnCerrar.BackColor = System.Drawing.Color.SteelBlue;
+			this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.btnCerrar.Location = new System.Drawing.Point(643, 524);
+			this.btnCerrar.Name = "btnCerrar";
+			this.btnCerrar.Size = new System.Drawing.Size(75, 30);
+			this.btnCerrar.TabIndex = 9;
+			this.btnCerrar.Text = "Cerrar";
+			this.btnCerrar.UseVisualStyleBackColor = false;
+			this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
 			// 
 			// FrmMenu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-			this.ClientSize = new System.Drawing.Size(715, 571);
+			this.ClientSize = new System.Drawing.Size(730, 566);
+			this.Controls.Add(this.btnCerrar);
 			this.Controls.Add(this.groupBox5);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox4);
@@ -474,10 +502,13 @@
 			this.Controls.Add(this.btnSuper);
 			this.Controls.Add(this.btnDiesel);
 			this.Controls.Add(this.gbxDatosEstacion);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "FrmMenu";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmMenu";
+			this.Load += new System.EventHandler(this.FrmMenu_Load);
 			this.gbxDatosEstacion.ResumeLayout(false);
 			this.gbxDatosEstacion.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
@@ -528,6 +559,7 @@
         private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label lblHours;
 		private System.Windows.Forms.Label lblPhone;
+		private System.Windows.Forms.Button btnCerrar;
 	}
 }
 

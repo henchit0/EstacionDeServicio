@@ -162,5 +162,15 @@ namespace EstacionDeServicio
             CalcularTotales();
             LlenarDatos();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
