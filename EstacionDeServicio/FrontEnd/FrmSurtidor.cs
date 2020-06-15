@@ -26,9 +26,9 @@ namespace EstacionDeServicio.FrontEnd
         public void LlenarDatos()
         {
             // Completo datos
-            lblCapacidad.Text = $"Capacidad de tanque: {_objSurtidor.tipoTanque.capacidadTanque} litros";
-            lblDisponible.Text = $"Disponible: {_objSurtidor.tipoTanque.disponibleTanque} litros";
-            lblSurtidor.Text = $"Surtidor de {_objSurtidor.tipoTanque.tipoCombustible}";
+            lblCapacidad.Text = $"Capacidad: {_objSurtidor.tipoTanque.capacidadTanque} lts";
+            lblDisponible.Text = $"Disponible: {_objSurtidor.tipoTanque.disponibleTanque} lts";
+            lblSurtidor.Text = _objSurtidor.tipoTanque.tipoCombustible;
             lblPrecio.Text = $"Precio: ${_objSurtidor.tipoTanque.precioPorLitro}";
         }
 
@@ -37,7 +37,7 @@ namespace EstacionDeServicio.FrontEnd
             numLitros.Value += 1;
             _objSurtidor.SurtirCombustible(1);            
             lblDisponible.Text = $"Disponible: {_objSurtidor.tipoTanque.disponibleTanque} litros";
-            lblMontoSurtido.Text = $"Monto surtido: ${_objSurtidor.tipoTanque.precioPorLitro * numLitros.Value}";
+            lblMontoSurtido.Text = $"Monto: ${_objSurtidor.tipoTanque.precioPorLitro * numLitros.Value}";
         }
 
         private void btnSurtir_Click(object sender, EventArgs e)
@@ -46,6 +46,7 @@ namespace EstacionDeServicio.FrontEnd
             timer.Enabled = true;
             btnSurtir.Enabled = false;
             btnFinalizar.Enabled = true;
+            btnVolver.Enabled = false;
         }
 
         private void btnFinalizar_Click(object sender, EventArgs e)
@@ -63,7 +64,8 @@ namespace EstacionDeServicio.FrontEnd
             lblCobrado.Text = $"Se cobró: ${_objSurtidor.montoSurtido}";
             btnSurtir.Enabled = true;
             btnCobrar.Enabled = false;
-            lblMontoSurtido.Text = "Monto surtido: $ 0,00";
+            btnVolver.Enabled = true;
+            lblMontoSurtido.Text = "Monto: $0,00";
             numLitros.Value = 0;
             _objSurtidor.cantOperaciones++;
         }
@@ -79,6 +81,21 @@ namespace EstacionDeServicio.FrontEnd
         }
 
         private void lblDisponible_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPrecio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
