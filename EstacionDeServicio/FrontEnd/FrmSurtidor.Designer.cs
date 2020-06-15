@@ -46,7 +46,6 @@
 			this.gbxSurtidos = new System.Windows.Forms.GroupBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.btnSurtir = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.numLitros)).BeginInit();
 			this.gbxSurtidor.SuspendLayout();
 			this.gbxTanque.SuspendLayout();
@@ -262,19 +261,6 @@
 			this.btnSurtir.UseVisualStyleBackColor = false;
 			this.btnSurtir.Click += new System.EventHandler(this.btnSurtir_Click);
 			// 
-			// button1
-			// 
-			this.button1.BackColor = System.Drawing.Color.SlateBlue;
-			this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(489, 299);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(65, 28);
-			this.button1.TabIndex = 12;
-			this.button1.Text = "Volver";
-			this.button1.UseVisualStyleBackColor = false;
-			// 
 			// FrmSurtidor
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,7 +268,6 @@
 			this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
 			this.BackColor = System.Drawing.SystemColors.GrayText;
 			this.ClientSize = new System.Drawing.Size(566, 392);
-			this.Controls.Add(this.button1);
 			this.Controls.Add(this.gbxSurtidor);
 			this.Controls.Add(this.lblCobrado);
 			this.Controls.Add(this.btnVolver);
@@ -326,6 +311,5 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.GroupBox gbxTanque;
 		private System.Windows.Forms.Button btnSurtir;
-		private System.Windows.Forms.Button button1;
 	}
 }
