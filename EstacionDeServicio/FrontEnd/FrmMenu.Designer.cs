@@ -92,9 +92,9 @@
             this.lblHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHours.Location = new System.Drawing.Point(494, 74);
             this.lblHours.Name = "lblHours";
-            this.lblHours.Size = new System.Drawing.Size(187, 16);
+            this.lblHours.Size = new System.Drawing.Size(149, 16);
             this.lblHours.TabIndex = 4;
-            this.lblHours.Text = "HORARIO DE ATENCION:";
+            this.lblHours.Text = "Horario de atencion:";
             // 
             // lblPhone
             // 
@@ -102,9 +102,9 @@
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhone.Location = new System.Drawing.Point(494, 50);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(92, 16);
+            this.lblPhone.Size = new System.Drawing.Size(74, 16);
             this.lblPhone.TabIndex = 3;
-            this.lblPhone.Text = "TELEFONO:";
+            this.lblPhone.Text = "Telefono:";
             // 
             // lblAddress
             // 
@@ -268,9 +268,9 @@
             this.lblPlayeroDiesel.Location = new System.Drawing.Point(10, 40);
             this.lblPlayeroDiesel.Margin = new System.Windows.Forms.Padding(3);
             this.lblPlayeroDiesel.Name = "lblPlayeroDiesel";
-            this.lblPlayeroDiesel.Size = new System.Drawing.Size(60, 20);
+            this.lblPlayeroDiesel.Size = new System.Drawing.Size(61, 20);
             this.lblPlayeroDiesel.TabIndex = 3;
-            this.lblPlayeroDiesel.Text = "playero";
+            this.lblPlayeroDiesel.Text = "Playero";
             // 
             // gbxSuper
             // 
@@ -307,9 +307,9 @@
             this.lblPlayeroSuper.Location = new System.Drawing.Point(7, 40);
             this.lblPlayeroSuper.Margin = new System.Windows.Forms.Padding(3);
             this.lblPlayeroSuper.Name = "lblPlayeroSuper";
-            this.lblPlayeroSuper.Size = new System.Drawing.Size(60, 20);
+            this.lblPlayeroSuper.Size = new System.Drawing.Size(61, 20);
             this.lblPlayeroSuper.TabIndex = 9;
-            this.lblPlayeroSuper.Text = "playero";
+            this.lblPlayeroSuper.Text = "Playero";
             // 
             // lblTotalLitrosSuper
             // 
@@ -390,9 +390,9 @@
             this.lblPlayeroPremium.Location = new System.Drawing.Point(7, 40);
             this.lblPlayeroPremium.Margin = new System.Windows.Forms.Padding(3);
             this.lblPlayeroPremium.Name = "lblPlayeroPremium";
-            this.lblPlayeroPremium.Size = new System.Drawing.Size(60, 20);
+            this.lblPlayeroPremium.Size = new System.Drawing.Size(61, 20);
             this.lblPlayeroPremium.TabIndex = 15;
-            this.lblPlayeroPremium.Text = "playero";
+            this.lblPlayeroPremium.Text = "Playero";
             // 
             // lblTotalLitrosPremium
             // 
